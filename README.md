@@ -1,5 +1,5 @@
 # TensorFlow Serving
-Ready to run example of TensorFlow serving, written by Alrajeh
+Ready to run example of TensorFlow serving
 
 Reference: https://www.tensorflow.org/tfx/serving/tutorials/Serving_REST_simple
 
