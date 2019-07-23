@@ -12,5 +12,5 @@ python model.py # train and save a model
 
 python request.py # send web request to the model
 
-kill `cat server.pid` # kill the server
+./stop.sh # stop the server
 ```

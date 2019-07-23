@@ -47,14 +47,6 @@ headers = {"content-type": "application/json"}
 json_response = requests.post('http://localhost:8501/v1/models/fashion_model:predict', data=data, headers=headers)
 predictions = json.loads(json_response.text)['predictions']
 
-i = 0
-show(i, 'The model thought this was a {} (class {}),\n and it was actually a {} (class {})'.format(
-  class_names[np.argmax(predictions[i])], test_labels[i], class_names[np.argmax(predictions[i])], test_labels[i]))
-
-i = 1
-show(i, 'The model thought this was a {} (class {}),\n and it was actually a {} (class {})'.format(
-  class_names[np.argmax(predictions[i])], test_labels[i], class_names[np.argmax(predictions[i])], test_labels[i]))
-
-i = 2
-show(i, 'The model thought this was a {} (class {}),\n and it was actually a {} (class {})'.format(
-  class_names[np.argmax(predictions[i])], test_labels[i], class_names[np.argmax(predictions[i])], test_labels[i]))
+for i in range(0,3):
+  show(i, 'The model thought this was a {} (class {}),\n and it was actually a {} (class {})'.format(
+    class_names[np.argmax(predictions[i])], np.argmax(predictions[i]), class_names[test_labels[i]], test_labels[i]))
