@@ -1,10 +1,10 @@
 # TensorFlow Serving
-Ready to run example of tensorFlow serving, written by Alrajeh
+Ready to run example of TensorFlow serving, written by Alrajeh
 
-Rrefrence: https://www.tensorflow.org/tfx/serving/tutorials/Serving_REST_simple
+Reference: https://www.tensorflow.org/tfx/serving/tutorials/Serving_REST_simple
 
 ```
-./install.sh # run for one time to install the requirments
+./install.sh # run for one time to install the requirements
 
 python model.py # train and save a model
 
